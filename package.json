@@ -1,11 +1,7 @@
 {
-  "//1": "describes your app and its dependencies",
-  "//2": "https://docs.npmjs.com/files/package.json",
-  "//3": "updating this file will download and update your packages",
-
-  "name": "my-glitch-app",
+  "name": "cool-name-api",
   "version": "0.0.1",
-  "description": "What am I about?",
+  "description": "Mohit ==> m0h1t",
   "scripts": {
     "start": "node server.js"
   },
@@ -16,7 +12,7 @@
     "node": "9.x"
   },
   "repository": {
-    "url": "https://glitch.com/edit/#!/my-glitch-app"
+    "url": "https://glitch.com/edit/#!/cool-name-api"
   },
   "license": "MIT",
   "keywords": [
