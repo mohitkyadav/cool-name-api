@@ -3,6 +3,8 @@
 
 // init project
 const express = require('express')
+const coolify = require('./services/coolifyService')
+
 const app = express()
 
 // we've started you off with Express, 
@@ -28,9 +30,11 @@ app.get("/dreams", (request, response) => {
 })
 
 // could also use the POST body instead of query string: http://expressjs.com/en/api.html#req.body
-app.post("/dreams", (request, response) => {
-  dreams.push(request.query.dream)
-  response.sendStatus(200)
+app.get("/coolify", (request, response) => {
+  let cool_name = coolify.alphaNumericName(request.query.name)
+  dreams.push(cool_name)
+  response.setHeader('Content-Type', 'application/json')
+  response.json({name: cool_name})
 })
 
 // listen for requests :)

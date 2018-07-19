@@ -15,9 +15,9 @@ $(function() {
 
   $('form').submit(function(event) {
     event.preventDefault()
-    var dream = $('input').val()
-    $.post('/dreams?' + $.param({dream: dream}), function() {
-      $('<li></li>').text(dream).appendTo('ul#dreams')
+    var name = $('input').val()
+    $.get('/coolify?' + $.param({name: name}), function() {
+      $('<li></li>').text(name).appendTo('ul#dreams')
       $('input').val('')
       $('input').focus()
     })

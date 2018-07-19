@@ -10,21 +10,11 @@
 }
 
 body {
-  font-family: helvetica, arial, sans-serif;
   margin: 25px;
 }
 
-h1 {
-  font-weight: bold;
-  color: pink;
-}
-
-.bold {
-  font-weight: bold;
-}
-
-p {
-  max-width: 600px;
+.content {
+  width: 100%;
 }
 
 form {
@@ -57,7 +47,7 @@ button {
 }
 
 button:hover {
-  background-color: yellow;
+  background-color: rgb(47, 156, 219);
 }
 
 button:active {
