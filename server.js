@@ -31,10 +31,16 @@ app.get("/dreams", (request, response) => {
 
 // could also use the POST body instead of query string: http://expressjs.com/en/api.html#req.body
 app.get("/coolify", (request, response) => {
-  let cool_name = coolify.alphaNumericName(request.query.name)
-  dreams.push(cool_name)
+  let cool_names = coolify.alphaNumericName(request.query.name)
+  dreams.push(cool_names[0])
+  dreams.push(cool_names[1])
+  dreams.push(cool_names[2])
   response.setHeader('Content-Type', 'application/json')
-  response.json({name: cool_name})
+  response.json({
+    cool_name_alphanum: cool_names[0],
+    cool_name_rounded: cool_names[1],
+    cool_name_square: cool_names[2],
+  })
 })
 
 // listen for requests :)

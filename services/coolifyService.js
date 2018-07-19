@@ -14,7 +14,36 @@ coolifyDicts.bracket = {
   'alphaBracket' : '【',
   'betaBacket' : '】',
 };
+coolifyDicts.square = {
+  'a' : '🄰',
+  'b' : '🄱',
+  'c' : '🄲',
+  'd' : '🄳',
+  'e' : '🄴',
+  'f' : '🄵',
+  'g' : '🄶',
+  'h' : '🄷',
+  'i' : '🄸',
+  'j' : '🄹',
+  'k' : '🄺',
+  'l' : '🄻',
+  'm' : '🄼',
+  'n' : '🄽',
+  'o' : '🄾',
+  'p' : '🄿',
+  'q' : '🅀',
+  'r' : '🅁',
+  's' : '🅂',
+  't' : '🅃',
+  'u' : '🅄',
+  'v' : '🅅',
+  'w' : '🅆',
+  'x' : '🅇',
+  'y' : '🅈',
+  'z' : '🅉'
+};
 coolifyDicts.rounded = {
+  ' ' : '_',
   'a' : 'ⓐ',
   'b' : 'ⓑ',
   'c' : 'ⓒ',
@@ -54,8 +83,10 @@ String.prototype.allReplace = function(obj) {
 coolify.alphaNumericName = function(name) {
   if(typeof(name) == 'string') {
     name = name.toLocaleLowerCase();
-    let cool_name = name.allReplace(coolifyDicts.alphaNum);
-    return cool_name;
+    let cool_name_alphanum = name.allReplace(coolifyDicts.alphaNum);
+    let cool_name_rounded = name.allReplace(coolifyDicts.rounded);
+    let cool_name_square = name.allReplace(coolifyDicts.square);
+    return [cool_name_alphanum, cool_name_rounded, cool_name_square];
   } else {
     return false;
   }

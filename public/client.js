@@ -20,6 +20,7 @@ $(function() {
       $('<li></li>').text(name).appendTo('ul#dreams')
       $('input').val('')
       $('input').focus()
+      window.location.reload();
     })
   })
 
