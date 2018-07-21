@@ -4,7 +4,7 @@ coolifyDicts = {};
 coolifyDicts.alphaNum = {
   'b' : '6',
   'e' : '3',
-  'l' : '1',
+  'i' : '1',
   'o' : '0',
   's' : '5',
   'z' : '2',

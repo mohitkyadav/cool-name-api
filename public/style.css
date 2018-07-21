@@ -11,20 +11,27 @@
 
 body {
   margin: 25px;
+  background: linear-gradient(to right, rgba(14, 255, 250, 0.24) 0%, rgb(95, 212, 217) 100%);
 }
 
 .content {
+  max-width: max-content;
+  margin: auto;
+}
+
+.header {
   width: 100%;
 }
 
 form {
   margin-bottom: 25px;
   padding: 15px;
-  background-color: cyan;
+  background-color: deeppink;
   display: inline-block;
   width: 100%;
-  max-width: 340px;
+  border: 1px solid black;
   border-radius: 3px;
+  box-shadow: 4px 4px black;
 }
 
 input {
@@ -41,8 +48,8 @@ button {
   font-size: 16px;
   border-radius: 3px;
   background-color: lightgrey;
-  border: 1px solid grey;
-  box-shadow: 2px 2px teal;
+  border: 1px solid black;
+  box-shadow: 3px 3px black;
   cursor: pointer;
 }
 

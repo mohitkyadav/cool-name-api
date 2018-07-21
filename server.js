@@ -19,22 +19,19 @@ app.get("/", (request, response) => {
 })
 
 // Simple in-memory store
-const dreams = [
-  "Find and count some sheep",
-  "Climb a really tall mountain",
-  "Wash the dishes"
+const names = [
 ]
 
-app.get("/dreams", (request, response) => {
-  response.send(dreams)
+app.get("/names", (request, response) => {
+  response.send(names)
 })
 
 // could also use the POST body instead of query string: http://expressjs.com/en/api.html#req.body
 app.get("/coolify", (request, response) => {
   let cool_names = coolify.alphaNumericName(request.query.name)
-  dreams.push(cool_names[0])
-  dreams.push(cool_names[1])
-  dreams.push(cool_names[2])
+  names.unshift(cool_names[0])
+  names.unshift(cool_names[1])
+  names.unshift(cool_names[2])
   response.setHeader('Content-Type', 'application/json')
   response.json({
     cool_name_alphanum: cool_names[0],
