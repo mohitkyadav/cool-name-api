@@ -6,12 +6,17 @@
 
 * {
   box-sizing: border-box;
-  font-family: 'Inconsolata', monospace;
+  font-family: 'Inconsolata', monospace !important;
 }
 
 body {
-  margin: 25px;
-  background: linear-gradient(to right, rgba(14, 255, 250, 0.24) 0%, rgb(95, 212, 217) 100%);
+  width: 100%;
+  color: white;
+  background: black;
+}
+
+footer {
+  background: #2a2a2a;
 }
 
 .content {
@@ -20,6 +25,7 @@ body {
 }
 
 .header {
+  padding: 10px;
   width: 100%;
 }
 
@@ -31,7 +37,7 @@ form {
   width: 100%;
   border: 1px solid black;
   border-radius: 3px;
-  box-shadow: 4px 4px black;
+  box-shadow: 4px 4px white;
 }
 
 input {
@@ -42,6 +48,7 @@ input {
   border: 1px solid lightgrey;
   border-radius: 3px;
   font-size: 16px;
+  box-shadow: 3px 3px black;
 }
 
 button {
@@ -61,20 +68,11 @@ button:active {
   box-shadow: none;
 }
 
-li {
-  margin-bottom: 5px;
+#cool-names-list h1 {
+  color: white;
 }
 
-footer {
-  margin-top: 50px;
-  padding-top: 25px;
-  border-top: 1px solid lightgrey;
-}
-
-footer > a {
-  color: #BBBBBB;
-}
-
-.nicejob {
-  text-decoration: line-through;
+#cool-names-list h1::selection {
+  background: deeppink;
+  color: white;
 }

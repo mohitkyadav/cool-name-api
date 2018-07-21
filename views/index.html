@@ -8,27 +8,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="css/uikit.min.css" />
+      <script src="js/uikit.min.js"></script>
+      <script src="js/uikit-icons.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
   </head>
   <body>
     <main>
       <div class="header">
         <p>Enter y0ur name in the b0x</p>
-        <form>
-          <input id="mah-nam" type="text" maxlength="100" placeholder="y0ur name!">
+        <form uk-sticky="animation: uk-animation-slide-top; offset: 10;">
+          <input id="mah-nam" type="text" maxlength="100" placeholder="aye, sir!">
           <button type="submit">coolify</button>
         </form>
       </div>
       <div class="content">
-          <section class="dreams">
-            <ul id="dreams">
+          <section class="names">
+            <ul id="cool-names-list">
             </ul>
           </section>
       </div>
     </main>
 
     <footer>
-      Wassup!
+      wassup!
     </footer>
 
     <!-- Your web-app is https, so your scripts need to be too -->

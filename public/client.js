@@ -9,7 +9,7 @@ $(function() {
   
   $.get('/names', function(names) {
     names.forEach(function(name) {
-      $('<h1></h1>').text(name).appendTo('ul#dreams')
+      $('<h1></h1>').text(name).appendTo('ul#cool-names-list')
     })
   })
 
@@ -17,7 +17,7 @@ $(function() {
     event.preventDefault()
     var name = $('input').val()
     $.get('/coolify?' + $.param({name: name}), function() {
-      $('<li></li>').text(name).appendTo('ul#dreams')
+      $('<li></li>').text(name).appendTo('ul#cool-names-list')
       $('input').val('')
       $('input').focus()
       window.location.reload();
