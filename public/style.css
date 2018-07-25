@@ -20,12 +20,12 @@ footer {
 }
 
 .content {
-  max-width: max-content;
+  max-width: 100%;
   margin: auto;
 }
 
 .header {
-  padding: 10px;
+  padding: 10px 25px 10px 25px;
   width: 100%;
 }
 
@@ -38,6 +38,10 @@ form {
   border: 1px solid black;
   border-radius: 3px;
   box-shadow: 4px 4px white;
+}
+.all-name-card, .ur-name-card, .json-card{
+  border-radius: 3px !important;
+  box-shadow: 4px 4px white !important;
 }
 
 input {
@@ -68,7 +72,7 @@ button:active {
   box-shadow: none;
 }
 
-#cool-names-list h1 {
+.header h2 {
   color: white;
 }
 
@@ -76,3 +80,25 @@ button:active {
   background: deeppink;
   color: white;
 }
+
+/* scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track { 
+  border-radius: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #534d4d;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: deeppink; 
+}
+/* scrollbar */

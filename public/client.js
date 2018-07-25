@@ -9,7 +9,7 @@ $(function() {
   
   $.get('/names', function(names) {
     names.forEach(function(name) {
-      $('<h1></h1>').text(name).appendTo('ul#cool-names-list')
+      $('<h3></h3>').text(name).appendTo('ul#cool-names-list')
     })
   })
 

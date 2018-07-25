@@ -16,17 +16,42 @@
   <body>
     <main>
       <div class="header">
-        <p>Enter y0ur name in the b0x</p>
-        <form uk-sticky="animation: uk-animation-slide-top; offset: 10;">
+        <h2>🄴nt3ⓡ 🅈0ⓤⓡ nam3 1n th3 b0x</h2>
+        <form uk-sticky="animation: uk-animation-slide-top; offset: 10; show-on-up: true;">
           <input id="mah-nam" type="text" maxlength="100" placeholder="aye, sir!">
           <button type="submit">coolify</button>
         </form>
       </div>
-      <div class="content">
-          <section class="names">
-            <ul id="cool-names-list">
-            </ul>
-          </section>
+      <div class="content" uk-scrollspy="cls: uk-animation-slide-bottom-small; target: > div, div > .uk-card, .uk-card > .uk-card; delay: 100; repeat: true">
+          <div class="uk-child-width-1-2@m uk-text-center uk-padding" uk-grid>
+            <div>
+              <div class="uk-child-width-1-2@s uk-text-center" uk-grid>
+                  <div>
+                      <div class="ur-name-card uk-overflow-auto uk-height-large uk-card uk-card-secondary uk-card-body">
+                        <h3>Your cool names</h3>         
+                        <hr>               
+                        <section class="names">
+                          <ul id="cool-names-list">
+                          </ul>
+                        </section>
+                      </div>
+                  </div>
+                  <div>
+                      <div class="uk-card all-name-card uk-height-large uk-overflow-auto  uk-card-secondary uk-card-body">
+                        <h3>All cool names</h3>
+                        <hr>
+                        <section class="names">
+                          <ul id="cool-names-list">
+                          </ul>
+                        </section>
+                      </div>
+                  </div>
+              </div>
+            </div>
+            <div>
+                <div class="uk-card json-card uk-card-secondary uk-card-body">Item</div>
+            </div>
+        </div>
       </div>
     </main>
 

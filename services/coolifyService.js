@@ -15,6 +15,7 @@ coolifyDicts.bracket = {
   'betaBacket' : '】',
 };
 coolifyDicts.square = {
+  ' ' : '_',
   'a' : '🄰',
   'b' : '🄱',
   'c' : '🄲',
