@@ -18,12 +18,19 @@
       <div class="header">
         <h2>🄴nt3ⓡ 🅈0ⓤⓡ nam3 1n th3 b0x</h2>
         <form uk-sticky="animation: uk-animation-slide-top; offset: 10; show-on-up: true;">
-          <input id="mah-nam" type="text" maxlength="100" placeholder="aye, sir!">
+          <input id="mah-nam" type="text" maxlength="100" placeholder="aye, sir!" required>
           <button type="submit">coolify</button>
         </form>
       </div>
       <div class="content" uk-scrollspy="cls: uk-animation-slide-bottom-small; target: > div, div > .uk-card, .uk-card > .uk-card; delay: 100; repeat: true">
-          <div class="uk-child-width-1-2@m uk-text-center uk-padding" uk-grid>
+          <div class="uk-child-width-1-1@m uk-text-center uk-padding" uk-grid>
+            <div>
+                <div class="uk-card json-card uk-card-secondary uk-card-body">
+                    <span style="color: black; background: white;" class="uk-padding-small uk-width-1-1" >
+                        API : http://{{ window.location.origin }}/coolify?name=yo
+                    </span>
+                </div>
+            </div>
             <div>
                 <div>
                   <div class="ur-name-card uk-overflow-auto uk-height-large uk-card uk-card-secondary uk-card-body">
@@ -35,9 +42,6 @@
                     </section>
                   </div>
                 </div>
-            </div>
-            <div>
-                <div class="uk-card json-card uk-card-secondary uk-card-body">API</div>
             </div>
         </div>
       </div>
