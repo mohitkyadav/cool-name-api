@@ -23,5 +23,6 @@ Found a bug, please [create an issue](https://github.com/mohitkyadav/cool-name-a
 > © Mohit Kumar Yadav
 
 
-Hosted on Glitch, 
+Hosted on Glitch, find on Glitch [create an issue](https://glitch.com/edit/#!/cool-name-api)
+https://glitch.com/edit/#!/cool-name-api
 Find out more [about Glitch](https://glitch.com/about).
