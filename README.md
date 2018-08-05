@@ -1,4 +1,4 @@
-`wolverine --> ⓦ0lv3r1ⓝ`
+`wolverine --> ⓦ0lv3r1nⓔ`
 ## I am alive
 https://cool-name-api.glitch.me/
 
