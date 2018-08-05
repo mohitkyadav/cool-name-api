@@ -83,11 +83,13 @@ String.prototype.allReplace = function(obj) {
 
 coolify.alphaNumericName = function(name) {
   if(typeof(name) == 'string') {
-    name = name.toLocaleLowerCase();
-    let cool_name_alphanum = name.allReplace(coolifyDicts.alphaNum);
+		name = name.toLocaleLowerCase();
+		let cool_name_alphanum = name.allReplace(coolifyDicts.alphaNum);
     let cool_name_rounded = name.allReplace(coolifyDicts.rounded);
-    let cool_name_square = name.allReplace(coolifyDicts.square);
-    return [cool_name_alphanum, cool_name_rounded, cool_name_square];
+		let cool_name_square = name.allReplace(coolifyDicts.square);
+		let cool_name_round_alphanum = cool_name_rounded.slice(0, 1) + cool_name_alphanum.slice(1, name.length - 2)
+												+ cool_name_rounded.slice(name.length - 2, name.length - 1);
+    return [cool_name_alphanum, cool_name_rounded, cool_name_square, cool_name_round_alphanum];
   } else {
     return false;
   }
