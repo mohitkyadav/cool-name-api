@@ -8,6 +8,7 @@ https://cool-name-api.glitch.me/
 ```
 npm start
 ```
+# Author
 Mohit Kumar Yadav
 
 [<img src="https://image.flaticon.com/icons/svg/34/34238.svg" width="50" padding="10">](https://twitter.com/mohitkyadav123)
