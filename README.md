@@ -1,27 +1,27 @@
-Welcome to the Glitch BETA
-==========================
+`wolverine --> ⓦ0lv3r1ⓝ`
+## I am alive
+https://cool-name-api.glitch.me/
 
-Click `Show` in the header to see your app live. Updates to your code will instantly deploy and update live.
 
-**Glitch** is the friendly community where you'll build the app of your dreams. Glitch lets you instantly create, remix, edit, and host an app, bot or site, and you can invite collaborators or helpers to simultaneously edit code with you.
+## Build Setup
 
+```
+npm start
+```
+Mohit Kumar Yadav
+
+[<img src="https://image.flaticon.com/icons/svg/34/34238.svg" width="50" padding="10">](https://twitter.com/mohitkyadav123)
+[<img src="https://www.shareicon.net/download/2015/11/02/665921_internet.svg" width="50" padding="10">](https://linkedin.com/in/mohitkyadav)
+[<img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" width="50" padding="10">](https://github.com/mohitkyadav)
+
+## Contribute
+Found a bug, please [create an issue](https://github.com/mohitkyadav/cool-name-api/issues/new)
+
+## License
+
+[![license](https://img.shields.io/github/license/mashape/apistatus.svg)](#)
+> © Mohit Kumar Yadav
+
+
+Hosted on Glitch, 
 Find out more [about Glitch](https://glitch.com/about).
-
-
-Your Project
-------------
-
-On the front-end,
-- edit `public/client.js`, `public/style.css` and `views/index.html`
-- drag in `assets`, like images or music, to add them to your project
-
-On the back-end,
-- your app starts at `server.js`
-- add frameworks and packages in `package.json`
-- safely store app secrets in `.env` (nobody can see this but you and people you invite)
-
-
-Made by [Fog Creek](https://fogcreek.com/)
--------------------
-
-\ ゜o゜)ノ
