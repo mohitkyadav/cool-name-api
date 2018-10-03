@@ -75,9 +75,10 @@ coolifyDicts.rounded = {
 
 coolifyDicts.symbolic = {
   'a': '@',
+  'c': '(',
+  'i': '!',
   'l': '|',
-  't': '7',
-  'i': '|'
+  't': '7'
 }
 
 String.prototype.allReplace = function(obj) {
