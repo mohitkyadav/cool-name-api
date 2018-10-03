@@ -2,11 +2,15 @@ coolify = {};
 coolifyDicts = {};
 
 coolifyDicts.alphaNum = {
+  'a' : '4',
   'b' : '6',
   'e' : '3',
+  'g' : '6',
   'i' : '1',
+  'l' : '1',
   'o' : '0',
   's' : '5',
+  't' : '7',
   'z' : '2',
   ' ' : '_'
 };
