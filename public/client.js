@@ -5,9 +5,7 @@
 // add other scripts at the bottom of index.html
 
 $(function() {
-	$('form').submit(function(event) {
-		event.preventDefault()
-		var name = $('input').val()
+	function fill(name) {
 		$.get('/coolify?' + $.param({name: name}), function(data) {
 			$('ul#cool-names-list').empty()
 			Object.keys(data).forEach(function(key) {
@@ -16,6 +14,25 @@ $(function() {
 			})
 			$('input').focus()
 		})
+	}
+
+	if (typeof(URL) != 'undefined') {
+		let url = (new URL(document.location))
+		let params = url.searchParams
+		if (params != undefined) {
+			var name = params.get('name')
+			if (name != null)
+			{
+				$('input').val(name)
+				fill(name)
+			}
+		}
+	}
+
+	$('form').submit(function(event) {
+		event.preventDefault()
+		var name = $('input').val()
+		fill(name)
 	})
 
 })
