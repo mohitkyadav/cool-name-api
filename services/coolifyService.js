@@ -72,6 +72,35 @@ coolifyDicts.rounded = {
   'y' : 'ⓨ',
   'z' : 'ⓩ'
 };
+coolifyDicts.emoji = {
+    ' ' : '_',
+    'a' : '🅰',
+    'b' : '🅱',
+    'c' : '🌜',
+    'd' : '🌛',
+    'e' : '🎗',
+    'f' : '🎏',
+    'g' : '🌀',
+    'h' : '♓',
+    'i' : '🎐',
+    'j' : '🎷',
+    'k' : '🎋',
+    'l' : '👢',
+    'm' : '〽️',
+    'n' : '🎵',
+    'o' : '⚽',
+    'p' : '🅿️',
+    'q' : '🍳',
+    'r' : '🌱',
+    's' : '💲',
+    't' : '🌴',
+    'u' : '⛎',
+    'v' : '✅',
+    'w' : '🔱',
+    'x' : '❎',
+    'y' : '🍸',
+    'z' : '💤'
+};
 
 String.prototype.allReplace = function(obj) {
   var retStr = this;
@@ -87,9 +116,10 @@ coolify.alphaNumericName = function(name) {
 		let cool_name_alphanum = name.allReplace(coolifyDicts.alphaNum);
     let cool_name_rounded = name.allReplace(coolifyDicts.rounded);
 		let cool_name_square = name.allReplace(coolifyDicts.square);
+		let cool_name_emoji = name.allReplace(coolifyDicts.emoji);
 		let cool_name_round_alphanum = cool_name_rounded.slice(0, 1) + cool_name_alphanum.slice(1, name.length - 1)
 												+ cool_name_rounded.slice(name.length - 1, name.length);
-    return [cool_name_alphanum, cool_name_rounded, cool_name_square, cool_name_round_alphanum];
+    return [cool_name_alphanum, cool_name_rounded, cool_name_square, cool_name_round_alphanum, cool_name_emoji];
   } else {
     return false;
   }
