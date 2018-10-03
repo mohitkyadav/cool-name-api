@@ -5,12 +5,6 @@
 // add other scripts at the bottom of index.html
 
 $(function() {
-	$.get('/names', function(names) {
-		names.forEach(function(name) {
-			$('<h3></h3>').text(name).appendTo('ul#cool-names-list')
-		})
-	})
-
 	$('form').submit(function(event) {
 		event.preventDefault()
 		var name = $('input').val()
