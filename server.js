@@ -33,6 +33,7 @@ app.get("/coolify", (request, response) => {
   names.unshift(cool_names[1])
   names.unshift(cool_names[2])
   names.unshift(cool_names[3])
+  names.unshift(cool_names[4])
   response.setHeader('Content-Type', 'application/json')
   response.json({
     cool_name_alphanum: cool_names[0],
