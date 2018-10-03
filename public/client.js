@@ -5,8 +5,6 @@
 // add other scripts at the bottom of index.html
 
 $(function() {
-	console.log('hello world :o')
-
 	$.get('/names', function(names) {
 		names.forEach(function(name) {
 			$('<h3></h3>').text(name).appendTo('ul#cool-names-list')
