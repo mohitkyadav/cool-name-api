@@ -14,11 +14,13 @@ $(function() {
 	$('form').submit(function(event) {
 		event.preventDefault()
 		var name = $('input').val()
-		$.get('/coolify?' + $.param({name: name}), function() {
-			$('<li></li>').text(name).appendTo('ul#cool-names-list')
-			$('input').val('')
+		$.get('/coolify?' + $.param({name: name}), function(data) {
+			$('ul#cool-names-list').empty()
+			Object.keys(data).forEach(function(key) {
+				var name = data[key]
+				$('<h3></h3>').text(name).appendTo('ul#cool-names-list')
+			})
 			$('input').focus()
-			window.location.reload();
 		})
 	})
 
