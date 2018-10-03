@@ -3,10 +3,13 @@
   "version": "0.0.1",
   "description": "Mohit ==> m0hit",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "test": "node node_modules/mocha/bin/_mocha ./**/*.spec.js"
   },
   "dependencies": {
-    "express": "^4.16.3"
+    "chai": "^4.2.0",
+    "express": "^4.16.3",
+    "mocha": "^5.2.0"
   },
   "engines": {
     "node": "9.x"
