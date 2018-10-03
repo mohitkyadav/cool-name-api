@@ -47,7 +47,8 @@ app.get("/coolify", (request, response) => {
 		cool_name_round_alphanum: cool_names[4],
 		cool_name_mirrored: cool_names[5],
 		cool_name_xabovebelow: cool_names[6],
-		cool_name_emoji: cool_names[7]
+		cool_name_emoji: cool_names[7],
+		cool_name_upsidedown: cool_names[8],
 	})
 })
 

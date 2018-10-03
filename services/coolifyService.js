@@ -144,6 +144,49 @@ coolifyDicts.emoji = {
 	'z' : '💤'
 };
 
+coolifyDicts.upsidedown = {
+	'a' : 'ɐ',
+	'b' : 'q',
+	'c' : 'ɔ',
+	'd' : 'p',
+	'e' : 'ǝ',
+	'f' : 'ɟ',
+	'g' : 'ƃ',
+	'h' : 'ɥ',
+	'i' : 'ᴉ',
+	'j' : 'ɾ',
+	'k' : 'ʞ',
+	'l' : 'ʃ',
+	'm' : 'ɯ',
+	'n' : 'u',
+	'p' : 'd',
+	'q' : 'b',
+	'r' : 'ɹ',
+	's' : 's',
+	't' : 'ʇ',
+	'u' : 'n',
+	'v' : 'ʌ',
+	'w' : 'ʍ',
+	'x' : 'x',
+	'y' : 'ʎ',
+	'!' : '¡',
+	'"' : '„',
+	'&' : '⅋',
+	'\'' : ',',
+	'\\.' : '˙',
+	'3' : 'Ɛ',
+	'4' : 'ᔭ',
+	'6' : '9',
+	'7' : 'Ɫ',
+	'9' : '6',
+	';' : '؛',
+	'\\?' : '¿',
+	'_' : '‾',
+	'‿' : '⁀',
+	'⁅' : '⁆',
+	'∴' : '∵',
+}
+
 String.prototype.allReplace = function(obj) {
 	var retStr = this;
 	for (var x in obj) {
@@ -164,7 +207,8 @@ coolify.alphaNumericName = function(name) {
 		let cool_name_symbolic = name.allReplace(coolifyDicts.symbolic);
 		let cool_name_mirrored = '‮' + name;
 		let cool_name_xabovebelow = name.allReplace(coolifyDicts.xabovebelow);
-		return [cool_name_alphanum, cool_name_rounded, cool_name_square, cool_name_round_alphanum, cool_name_symbolic, cool_name_mirrored, cool_name_emoji, cool_name_xabovebelow];
+		let cool_name_upsidedown = name.allReplace(coolifyDicts.upsidedown);
+		return [cool_name_alphanum, cool_name_rounded, cool_name_square, cool_name_round_alphanum, cool_name_symbolic, cool_name_mirrored, cool_name_emoji, cool_name_xabovebelow, cool_name_upsidedown];
 	} else {
 		return false;
 	}
