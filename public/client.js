@@ -5,23 +5,34 @@
 // add other scripts at the bottom of index.html
 
 $(function() {
-	console.log('hello world :o')
-
-	$.get('/names', function(names) {
-		names.forEach(function(name) {
-			$('<h3></h3>').text(name).appendTo('ul#cool-names-list')
+	function fill(name) {
+		$.get('/coolify?' + $.param({name: name}), function(data) {
+			$('ul#cool-names-list').empty()
+			Object.keys(data).forEach(function(key) {
+				var name = data[key]
+				$('<h3></h3>').text(name).appendTo('ul#cool-names-list')
+			})
+			$('input').focus()
 		})
-	})
+	}
+
+	if (typeof(URL) != 'undefined') {
+		let url = (new URL(document.location))
+		let params = url.searchParams
+		if (params != undefined) {
+			var name = params.get('name')
+			if (name != null)
+			{
+				$('input').val(name)
+				fill(name)
+			}
+		}
+	}
 
 	$('form').submit(function(event) {
 		event.preventDefault()
 		var name = $('input').val()
-		$.get('/coolify?' + $.param({name: name}), function() {
-			$('<li></li>').text(name).appendTo('ul#cool-names-list')
-			$('input').val('')
-			$('input').focus()
-			window.location.reload();
-		})
+		fill(name)
 	})
 
 })
