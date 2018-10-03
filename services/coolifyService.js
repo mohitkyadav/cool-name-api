@@ -117,6 +117,7 @@ coolify.alphaNumericName = function(name) {
 		let cool_name_round_alphanum = cool_name_rounded.slice(0, 1) + cool_name_alphanum.slice(1, name.length - 1)
 												+ cool_name_rounded.slice(name.length - 1, name.length);
    		let cool_name_symbolic = name.allReplace(coolifyDicts.symbolic);
+
 		let cool_name_french = name.allReplace(coolifyDicts.french);
 		
 		//Pig latin name
@@ -125,6 +126,10 @@ coolify.alphaNumericName = function(name) {
 																					
 																					
      return [cool_name_alphanum, cool_name_rounded, cool_name_square, cool_name_round_alphanum, cool_name_symbolic, cool_name_french, cool_name_pig_latin];
+
+		let cool_name_mirrored = '‮;' + name;
+     return [cool_name_alphanum, cool_name_rounded, cool_name_square, cool_name_round_alphanum, cool_name_symbolic,cool_name_french, cool_name_pig_latin, cool_name_mirrored];
+
   } else {
     return false;
   }
