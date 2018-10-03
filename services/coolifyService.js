@@ -160,14 +160,14 @@ coolify.alphaNumericName = function(name) {
 		let cool_name_square = name.allReplace(coolifyDicts.square);
 		let cool_name_emoji = name.allReplace(coolifyDicts.emoji);
 		let cool_name_round_alphanum = cool_name_rounded.slice(0, 1) + cool_name_alphanum.slice(1, name.length - 1)
-												+ cool_name_rounded.slice(name.length - 1, name.length);
-   		let cool_name_symbolic = name.allReplace(coolifyDicts.symbolic);
+			+ cool_name_rounded.slice(name.length - 1, name.length);
+		let cool_name_symbolic = name.allReplace(coolifyDicts.symbolic);
 		let cool_name_mirrored = '‮' + name;
-    let cool_name_xabovebelow = name.allReplace(coolifyDicts.xabovebelow);
-     return [cool_name_alphanum, cool_name_rounded, cool_name_square, cool_name_round_alphanum, cool_name_symbolic, cool_name_mirrored, cool_name_emoji, cool_name_xabovebelow];
-  } else {
-    return false;
-  }
+		let cool_name_xabovebelow = name.allReplace(coolifyDicts.xabovebelow);
+		return [cool_name_alphanum, cool_name_rounded, cool_name_square, cool_name_round_alphanum, cool_name_symbolic, cool_name_mirrored, cool_name_emoji, cool_name_xabovebelow];
+	} else {
+		return false;
+	}
 };
 
 module.exports = coolify;
