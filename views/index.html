@@ -28,8 +28,7 @@
           <div class="uk-child-width-1-1@m uk-text-center uk-padding" uk-grid>
             <div>
                 <div class="uk-card json-card uk-card-secondary uk-card-body">
-                    <span style="color: black; background: white;" class="uk-padding-small uk-width-1-1" >
-                        API : http://{{ window.location.origin }}/coolify?name=yo
+                    <span id="demo-url" style="color: black; background: white;" class="uk-padding-small uk-width-1-1" >
                     </span>
                 </div>
             </div>
@@ -58,6 +57,11 @@
             integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="
             crossorigin="anonymous"></script>
     <script src="/client.js"></script>
+
+    <script>
+        document.getElementById("demo-url").innerHTML = "API : " +
+        window.location.origin + "/coolify?name=yo";
+    </script>
 
   </body>
 </html>
