@@ -73,6 +73,14 @@ coolifyDicts.rounded = {
   'z' : 'ⓩ'
 };
 
+coolifyDicts.symbolic = {
+  'a': '@',
+  'c': '(',
+  'i': '!',
+  'l': '|',
+  't': '7'
+}
+
 String.prototype.allReplace = function(obj) {
   var retStr = this;
   for (var x in obj) {
@@ -92,6 +100,7 @@ coolify.alphaNumericName = function(name) {
     let cool_name_center_round = cool_name_square.slice(0, 1) + cool_name_rounded.slice(1, name.length -1 )
 												+ cool_name_square.slice(name.length - 1, name.length);
     return [cool_name_alphanum, cool_name_rounded, cool_name_square, cool_name_round_alphanum, cool_name_center_round];
+
   } else {
     return false;
   }

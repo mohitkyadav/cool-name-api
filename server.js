@@ -41,6 +41,7 @@ app.get("/coolify", (request, response) => {
 		cool_name_square: cool_names[2],
     cool_name_round_alphanum : cool_names[3],
     cool_name_center_round : cool_names[4]
+
   })
 })
 
