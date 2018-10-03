@@ -10,7 +10,10 @@ For example `wolverine` becomes:
 * `wo|ver!ne`
 * `🅆🄾🄻🅅🄴🅁🄸🄽🄴`
 * `ⓦⓞⓛⓥⓔⓡⓘⓝⓔ`
-*  (backwards) `‮wolverine`
+* `w01v3r1n3`
+* `🔱⚽👢✅🎗🌱🎐🎵🎗`
+* `w͓̽o͓̽l͓̽v͓̽e͓̽r͓̽i͓̽n͓̽e͓̽`
+* (backwards) `‮wolverine`
 
 You can visit the website at https://cool-name-api.glitch.me/
 
