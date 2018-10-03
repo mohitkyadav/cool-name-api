@@ -1,3 +1,7 @@
+# cool-name-api
+[![Build Status](https://travis-ci.org/mohitkyadav/cool-name-api.svg?branch=master)](https://travis-ci.org/mohitkyadav/cool-name-api)
+
+
 This is a website and node.js project to transform text into a cool representation of that text.
 
 For example `wolverine` becomes:
