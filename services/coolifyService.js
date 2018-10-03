@@ -14,6 +14,36 @@ coolifyDicts.alphaNum = {
   'z' : '2',
   ' ' : '_'
 };
+
+coolifyDicts.xabovebelow = {
+  'a':'a͓̽',
+  'b':'b͓̽',
+  'c':'c͓̽',
+  'd':'d͓̽',
+  'e':'e͓̽',
+  'f':'f͓̽',
+  'g':'g͓̽',
+  'h':'h͓̽',
+  'i':'i͓̽',
+  'j':'j͓̽',
+  'k':'k͓̽',
+  'l':'l͓̽',
+  'm':'m͓̽',
+  'n':'n͓̽',
+  'o':'o͓̽',
+  'p':'p͓̽',
+  'q':'q͓̽',
+  'r':'r͓̽',
+  's':'s͓̽',
+  't':'t͓̽',
+  'u':'u͓̽',
+  'v':'v͓̽',
+  'w':'w͓̽',
+  'x':'x͓̽',
+  'y':'y͓̽',
+  'z':'z͓̽',
+}
+
 coolifyDicts.bracket = {
   'alphaBracket' : '【',
   'betaBacket' : '】',
@@ -103,7 +133,8 @@ coolify.alphaNumericName = function(name) {
 												+ cool_name_rounded.slice(name.length - 1, name.length);
    		let cool_name_symbolic = name.allReplace(coolifyDicts.symbolic);
 		let cool_name_mirrored = '‮' + name;
-     return [cool_name_alphanum, cool_name_rounded, cool_name_square, cool_name_round_alphanum, cool_name_symbolic, cool_name_mirrored];
+    let cool_name_xabovebelow = name.allReplace(coolifyDicts.xabovebelow);
+     return [cool_name_alphanum, cool_name_rounded, cool_name_square, cool_name_round_alphanum, cool_name_symbolic, cool_name_mirrored, cool_name_xabovebelow];
   } else {
     return false;
   }
