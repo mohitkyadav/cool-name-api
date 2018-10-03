@@ -20,7 +20,7 @@ Found a bug, please [create an issue](https://github.com/mohitkyadav/cool-name-a
 
 ## License
 
-[![license](https://img.shields.io/github/license/mashape/apistatus.svg)](#)
+[![license](https://img.shields.io/github/license/mashape/apistatus.svg)](LICENSE)
 > © Mohit Kumar Yadav
 
 
