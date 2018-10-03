@@ -7,9 +7,6 @@ cache:
   directories:
   - node_modules
 
-install:
-  - install
-
 script:
   - npm test
 
