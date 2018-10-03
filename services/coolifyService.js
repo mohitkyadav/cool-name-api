@@ -83,7 +83,22 @@ coolifyDicts.symbolic = {
   'i': '!',
   'l': '|',
   't': '7'
-}
+};
+
+//French exageration
+coolifyDicts.french = {
+	'a' : 'ah',
+	'th': 'z',
+	'u': 'oo',
+	'ti': 'tsee',
+	'di': 'dzi',
+	'il': 'ee',
+	'r' : 'rrrr',
+	're': '',
+	
+};
+
+
 
 String.prototype.allReplace = function(obj) {
   var retStr = this;
@@ -102,7 +117,14 @@ coolify.alphaNumericName = function(name) {
 		let cool_name_round_alphanum = cool_name_rounded.slice(0, 1) + cool_name_alphanum.slice(1, name.length - 1)
 												+ cool_name_rounded.slice(name.length - 1, name.length);
    		let cool_name_symbolic = name.allReplace(coolifyDicts.symbolic);
-     return [cool_name_alphanum, cool_name_rounded, cool_name_square, cool_name_round_alphanum, cool_name_symbolic];
+		let cool_name_french = name.allReplace(coolifyDicts.french);
+		
+		//Pig latin name
+		let first_letter = name[0];
+		let cool_name_pig_latin = name.substr(1, name.len) + first_letter + "ay";
+																					
+																					
+     return [cool_name_alphanum, cool_name_rounded, cool_name_square, cool_name_round_alphanum, cool_name_symbolic, cool_name_french, cool_name_pig_latin];
   } else {
     return false;
   }
