@@ -1,4 +1,5 @@
 // server.js
+// we've started you off with Express,
 // where your node app starts
 
 // init project
