@@ -6,6 +6,7 @@
 
 $(function() {
 	function getCool(name) {
+		updateDemoUrl('/coolify?name=' + name);
 		$.get('/coolify?' + $.param({name: name}), function(data) {
 			$('ul#cool-names-list').empty()
 			Object.keys(data).forEach(function(key) {
@@ -17,6 +18,7 @@ $(function() {
 	}
 
 	function getUncool(name) {
+		updateDemoUrl('/uncoolify?name=' + name);
 		$.get('/uncoolify?' + $.param({name: name}), function(data) {
 			$('ul#cool-names-list').empty()
 			Object.keys(data).forEach(function(key) {
@@ -38,6 +40,11 @@ $(function() {
 				getCool(name)
 			}
 		}
+	}
+
+	function updateDemoUrl(pathAndParams) {
+		document.getElementById("demo-url").innerHTML = "$ curl -X GET " +
+		window.location.origin + encodeURI(pathAndParams);
 	}
 
 	$('#coolify-submit').click(function(event) {
