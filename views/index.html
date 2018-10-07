@@ -21,7 +21,8 @@
         </h1>
         <form uk-sticky="animation: uk-animation-slide-top; offset: 10; show-on-up: true;">
           <input id="mah-nam" type="text" maxlength="100" placeholder="aye, sir!" required>
-          <button type="submit">coolify</button>
+          <button id='coolify-submit' type="submit">coolify</button>
+          <button id='uncoolify-submit' type="submit">uncoolify</button>
         </form>
       </div>
       <div class="content" uk-scrollspy="cls: uk-animation-slide-bottom-small; target: > div, div > .uk-card, .uk-card > .uk-card; delay: 100; repeat: true">
@@ -29,6 +30,7 @@
             <div>
                 <div class="uk-card json-card uk-card-secondary uk-card-body">
                     <span id="demo-url" style="color: black; background: white;" class="uk-padding-small uk-width-1-1" >
+                      submit input for demo
                     </span>
                 </div>
             </div>
@@ -57,11 +59,5 @@
             integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="
             crossorigin="anonymous"></script>
     <script src="/client.js"></script>
-
-    <script>
-        document.getElementById("demo-url").innerHTML = "API : " +
-        window.location.origin + "/coolify?name=yo";
-    </script>
-
   </body>
 </html>

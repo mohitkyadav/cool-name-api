@@ -5,8 +5,21 @@
 // add other scripts at the bottom of index.html
 
 $(function() {
-	function fill(name) {
+	function getCool(name) {
+		updateDemoUrl('/coolify?name=' + name);
 		$.get('/coolify?' + $.param({name: name}), function(data) {
+			$('ul#cool-names-list').empty()
+			Object.keys(data).forEach(function(key) {
+				var name = data[key]
+				$('<h3></h3>').text(name).appendTo('ul#cool-names-list')
+			})
+			$('input').focus()
+		})
+	}
+
+	function getUncool(name) {
+		updateDemoUrl('/uncoolify?name=' + name);
+		$.get('/uncoolify?' + $.param({name: name}), function(data) {
 			$('ul#cool-names-list').empty()
 			Object.keys(data).forEach(function(key) {
 				var name = data[key]
@@ -24,15 +37,25 @@ $(function() {
 			if (name != null)
 			{
 				$('input').val(name)
-				fill(name)
+				getCool(name)
 			}
 		}
 	}
 
-	$('form').submit(function(event) {
+	function updateDemoUrl(pathAndParams) {
+		document.getElementById("demo-url").innerHTML = "$ curl -X GET " +
+		window.location.origin + encodeURI(pathAndParams);
+	}
+
+	$('#coolify-submit').click(function(event) {
 		event.preventDefault()
 		var name = $('input').val()
-		fill(name)
+		getCool(name)
 	})
 
+	$('#uncoolify-submit').click(function(event) {
+		event.preventDefault()
+		var name = $('input').val()
+		getUncool(name)
+	})
 })

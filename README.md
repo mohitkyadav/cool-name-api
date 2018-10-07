@@ -15,11 +15,31 @@ For example `wolverine` becomes:
 * `w͓̽o͓̽l͓̽v͓̽e͓̽r͓̽i͓̽n͓̽e͓̽`
 * (backwards) `‮wolverine`
 
-You can visit the website at https://cool-name-api.glitch.me/
+## Demo
 
-and make JSON API requests to https://cool-name-api.glitch.me/coolify?name=wolverine.
+To see the API in action, you can visit the website at https://cool-name-api.glitch.me/
 
-# Build Setup
+## Usage
+
+### coolify
+
+* request URL: https://cool-name-api.glitch.me/coolify
+* query params (required): `name`
+* example with 'wolverine': https://cool-name-api.glitch.me/coolify?name=wolverine
+```
+$ curl -X GET 'https://cool-name-api.glitch.me/coolify?name=wolverine'
+```
+
+### uncoolify
+
+* request URL: https://cool-name-api.glitch.me/uncoolify
+* query params (required): `name`
+* example with '🌛🌱⛎〽️🅿️🎏': https://cool-name-api.glitch.me/uncoolify?name=%F0%9F%8C%9B%F0%9F%8C%B1%E2%9B%8E%E3%80%BD%EF%B8%8F%F0%9F%85%BF%EF%B8%8F%F0%9F%8E%8F
+```
+$ curl -X GET 'http://localhost:3000/uncoolify?name=%F0%9F%8C%9B%F0%9F%8C%B1%E2%9B%8E%E3%80%BD%EF%B8%8F%F0%9F%85%BF%EF%B8%8F%F0%9F%8E%8F'
+```
+
+## Build Setup
 
 This is a node.js project. With Node installed you can start the listening webserver with
 
@@ -27,14 +47,14 @@ This is a node.js project. With Node installed you can start the listening webse
 npm start
 ```
 
-# Contribute
+## Contribute
 Found a bug, please [create an issue](https://github.com/mohitkyadav/cool-name-api/issues/new)
 
-# License
+## License
 
 [![license](https://img.shields.io/github/license/mashape/apistatus.svg)](LICENSE)
 
-# Live Website Hosting
+## Live Website Hosting
 
 The live website is hosted on [Glitch](https://glitch.com/about).
 You can [remix it there](https://glitch.com/edit/#!/cool-name-api).
