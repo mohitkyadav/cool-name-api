@@ -9,8 +9,13 @@ describe('uncoolifyService.alphaNumericeName', () => {
     expect(alphaNumericeName([])).to.be.false;
   });
 
+  it('should return error message if the name is already uncool', () => {
+    expect(alphaNumericeName('___')[0]).to.equal('Are you sure this is a cool name?');
+    expect(alphaNumericeName('a_t')[0]).to.equal('Are you sure this is a cool name?');
+  });
+
   it('should uncoolify leet', () => {
-    expect(alphaNumericeName('h3110')[0]).to.equal('hello');
+    expect(alphaNumericeName('h3110_b¡g_bo¡')[0]).to.equal('hello big boi');
   });
 
   it('should uncoolify round letters', () => {
@@ -29,7 +34,7 @@ describe('uncoolifyService.alphaNumericeName', () => {
    */
 
   it('should uncoolify the symbolic equivalent', () => {
-    expect(alphaNumericeName('he||o(@')[0]).to.equal('helloca');
+    expect(alphaNumericeName('he||o(@!')[0]).to.equal('hellocai');
   })
 
   /*

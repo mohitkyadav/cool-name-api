@@ -10,7 +10,7 @@ describe('coolifyService.alphaNumericeName', () => {
   });
 
   it('should replace letters with the specified number equivalent', () => {
-    expect(alphaNumericeName('hello')[0]).to.equal('h3110');
+    expect(alphaNumericeName('hello isaiah')[0]).to.equal('h3110_¡54¡4h');
   });
 
   it('should round each letter', () => {
