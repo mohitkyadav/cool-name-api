@@ -4,6 +4,7 @@
 // init project
 const express = require('express')
 const coolify = require('./services/coolifyService')
+const uncoolify = require('./services/uncoolifyService')
 
 const app = express()
 
@@ -32,6 +33,14 @@ app.get("/coolify", (request, response) => {
 		cool_name_xabovebelow: cool_names[6],
 		cool_name_emoji: cool_names[7],
 		cool_name_upsidedown: cool_names[8],
+	})
+})
+
+app.get("/uncoolify", (request, response) => {
+	let uncoolified_name = uncoolify.alphaNumericName(request.query.name)
+	response.setHeader('Content-Type', 'application/json')
+	response.json({
+		uncool_name: uncoolified_name
 	})
 })
 
