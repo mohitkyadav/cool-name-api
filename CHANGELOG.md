@@ -3,6 +3,12 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+## 0.0.3 - Oct 07, 2018
+### Added
+- introduce uncoolify service by [@johncoleman83](https://github.com/johncoleman83)
+- reverse dictionaries [@johncoleman83](https://github.com/johncoleman83)
+- tests for uncoolify service [@johncoleman83](https://github.com/johncoleman83)
+
 ## 0.0.2 - Oct 03, 2018
 ### Added
 - tests for coolify service by [@morgsmccauley](https://github.com/morgsmccauley)
