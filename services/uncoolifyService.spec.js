@@ -10,15 +10,15 @@ describe('uncoolifyService.alphaNumericeName', () => {
   });
 
   it('should uncoolify leet', () => {
-    expect(alphaNumericeName('h3110')).to.equal('hello');
+    expect(alphaNumericeName('h3110')[0]).to.equal('hello');
   });
 
   it('should uncoolify round letters', () => {
-    expect(alphaNumericeName('ⓗⓔⓛⓛⓞ')).to.equal('hello');
+    expect(alphaNumericeName('ⓗⓔⓛⓛⓞ')[0]).to.equal('hello');
   });
 
   it('should uncoolify box letters', () => {
-    expect(alphaNumericeName('🄷🄴🄻🄻🄾')).to.equal('hello');
+    expect(alphaNumericeName('🄷🄴🄻🄻🄾')[0]).to.equal('hello');
   });
 
   /*
@@ -29,7 +29,7 @@ describe('uncoolifyService.alphaNumericeName', () => {
    */
 
   it('should uncoolify the symbolic equivalent', () => {
-    expect(alphaNumericeName('he||o(@')).to.equal('helloca');
+    expect(alphaNumericeName('he||o(@')[0]).to.equal('helloca');
   })
 
   /*
@@ -40,14 +40,14 @@ describe('uncoolifyService.alphaNumericeName', () => {
    */
 
   it('should uncoolify emojis', () => {
-    expect(alphaNumericeName('♓🎗👢👢⚽')).to.equal('hello');
+    expect(alphaNumericeName('♓🎗👢👢⚽')[0]).to.equal('hello');
   });
 
   it('should uncoolify letters with x above and below', () => {
-    expect(alphaNumericeName('h͓̽e͓̽l͓̽l͓̽o͓̽')).to.equal('hello');
+    expect(alphaNumericeName('h͓̽e͓̽l͓̽l͓̽o͓̽')[0]).to.equal('hello');
   });
 
   it('should uncoolify flipped letters', () => {
-    expect(alphaNumericeName('ɥǝʃʃo')).to.equal('hello');
+    expect(alphaNumericeName('ɥǝʃʃo')[0]).to.equal('hello');
   });
 })
