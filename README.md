@@ -1,29 +1,40 @@
-`wolverine --> ⓦ0lv3r1nⓔ`
-## I am alive
-https://cool-name-api.glitch.me/
+# cool-name-api
+[![Build Status](https://travis-ci.org/mohitkyadav/cool-name-api.svg?branch=master)](https://travis-ci.org/mohitkyadav/cool-name-api)
 
 
-## Build Setup
+This is a website and node.js project to transform text into a cool representation of that text.
+
+For example `wolverine` becomes:
+
+* `ⓦ0lv3r1nⓔ`
+* `wo|ver!ne`
+* `🅆🄾🄻🅅🄴🅁🄸🄽🄴`
+* `ⓦⓞⓛⓥⓔⓡⓘⓝⓔ`
+* `w01v3r1n3`
+* `🔱⚽👢✅🎗🌱🎐🎵🎗`
+* `w͓̽o͓̽l͓̽v͓̽e͓̽r͓̽i͓̽n͓̽e͓̽`
+* (backwards) `‮wolverine`
+
+You can visit the website at https://cool-name-api.glitch.me/
+
+and make JSON API requests to https://cool-name-api.glitch.me/coolify?name=wolverine.
+
+# Build Setup
+
+This is a node.js project. With Node installed you can start the listening webserver with
 
 ```
 npm start
 ```
-# Author
-Mohit Kumar Yadav
 
-[<img src="https://image.flaticon.com/icons/svg/34/34238.svg" width="50" padding="10">](https://twitter.com/mohitkyadav123)
-[<img src="https://www.shareicon.net/download/2015/11/02/665921_internet.svg" width="50" padding="10">](https://linkedin.com/in/mohitkyadav)
-[<img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" width="50" padding="10">](https://github.com/mohitkyadav)
-
-## Contribute
+# Contribute
 Found a bug, please [create an issue](https://github.com/mohitkyadav/cool-name-api/issues/new)
 
-## License
+# License
 
-[![license](https://img.shields.io/github/license/mashape/apistatus.svg)](#)
-> © Mohit Kumar Yadav
+[![license](https://img.shields.io/github/license/mashape/apistatus.svg)](LICENSE)
 
+# Live Website Hosting
 
-Hosted on Glitch, contribute on [Glitch](https://glitch.com/edit/#!/cool-name-api)
-
-Find out more [about Glitch](https://glitch.com/about).
+The live website is hosted on [Glitch](https://glitch.com/about).
+You can [remix it there](https://glitch.com/edit/#!/cool-name-api).
