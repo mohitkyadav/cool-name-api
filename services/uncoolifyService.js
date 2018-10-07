@@ -47,7 +47,7 @@ uncoolifyDicts.bracket = {
   '】': 'betaBacket'
 };
 uncoolifyDicts.square = {
-	' ' : '_',
+	'_' : ' ',
   '🄰': 'a',
   '🄱': 'b',
   '🄲': 'c',
@@ -76,7 +76,7 @@ uncoolifyDicts.square = {
   '🅉': 'z'
 };
 uncoolifyDicts.rounded = {
-	' ' : '_',
+	'_' : ' ',
   'ⓐ': 'a',
   'ⓑ': 'b',
   'ⓒ': 'c',
@@ -122,7 +122,7 @@ symbolicRegex = {
 }
 
 uncoolifyDicts.emoji = {
-	' ' : '_',
+	'_' : ' ',
   '🅰': 'a',
   '🅱': 'b',
   '🌜': 'c',
@@ -201,7 +201,9 @@ uncoolify.findMatchingTheme = function(name) {
     let tempMatches = 0;
     for (let letter in pairs) {
       if (name.indexOf(letter) > -1) {
-        tempMatches += 1;
+        if (letter != '_') {
+          tempMatches += 1;
+        }
       }
     }
     if (tempMatches > maxMatches) {
