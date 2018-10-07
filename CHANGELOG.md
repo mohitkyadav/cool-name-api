@@ -5,6 +5,7 @@ All notable changes to this project will be documented in this file.
 
 ## 0.0.2 - Oct 03, 2018
 ### Added
+- tests for coolify service by [@morgsmccauley](https://github.com/morgsmccauley)
 - introduce name parameter to webpage by [@Kissaki](https://github.com/kissaki)
 - Make use of coolify JSON response to fill content [@Kissaki](https://github.com/kissaki)
 - Add upside down name as new result type [@Kissaki](https://github.com/kissaki)
