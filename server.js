@@ -33,6 +33,7 @@ app.get("/coolify", (request, response) => {
 		cool_name_xabovebelow: cool_names[6],
 		cool_name_emoji: cool_names[7],
 		cool_name_upsidedown: cool_names[8],
+		cool_name_wavy: cool_names[9],
 	})
 })
 

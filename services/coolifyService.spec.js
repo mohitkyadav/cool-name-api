@@ -44,4 +44,8 @@ describe('coolifyService.alphaNumericeName', () => {
   it('should flip each letter upsidedown', () => {
     expect(alphaNumericeName('hello')[8]).to.equal('ɥǝʃʃo');
   });
+
+  it('should replace with wavy letter', () => {
+    expect(alphaNumericeName('hello')[9]).to.equal('ᖺᙓᒪᒪᗢ');
+  });
 })
