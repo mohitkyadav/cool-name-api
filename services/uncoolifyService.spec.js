@@ -55,4 +55,8 @@ describe('uncoolifyService.alphaNumericeName', () => {
   it('should uncoolify flipped letters', () => {
     expect(alphaNumericeName('ɥǝʃʃo')[0]).to.equal('hello');
   });
+
+  it('should uncoolify curr letters', () => {
+    expect(alphaNumericeName('ⱧɆⱠⱠØ')[0]).to.equal('hello');
+  });
 })

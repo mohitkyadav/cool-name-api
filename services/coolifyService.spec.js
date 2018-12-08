@@ -48,4 +48,8 @@ describe('coolifyService.alphaNumericeName', () => {
   it('should replace with wavy letter', () => {
     expect(alphaNumericeName('hello')[9]).to.equal('ᖺᙓᒪᒪᗢ');
   });
+
+  it('should replace with Curr letter', () => {
+    expect(alphaNumericeName('hello')[10]).to.equal('ⱧɆⱠⱠØ');
+  });
 })

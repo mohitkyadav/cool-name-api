@@ -195,6 +195,35 @@ uncoolifyDicts.upsidedown = {
   '∵': '∴'
 }
 
+uncoolifyDicts.curr = {
+  '₳': 'a',
+  '฿': 'b',
+  '₵': 'c',
+  'Đ': 'd',
+  'Ɇ': 'e',
+  '₣': 'f',
+  '₲': 'g',
+  'Ⱨ': 'h',
+  'ł': 'i',
+  'J': 'j',
+  '₭': 'k',
+  'Ⱡ': 'l',
+  '₥': 'm',
+  '₦': 'n',
+  'Ø': 'o',
+  '₱': 'p',
+  'Q': 'q',
+  'Ɽ': 'r',
+  '₴': 's',
+  '₮': 't',
+  'Ʉ': 'u',
+  'V': 'v',
+  '₩': 'w',
+  'Ӿ': 'x',
+  'Ɏ': 'y',
+  'Ⱬ': 'z'
+};
+
 uncoolify.findMatchingTheme = function(name) {
   let maxMatches = 0;
   let themeMatch = null;
