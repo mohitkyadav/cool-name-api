@@ -56,6 +56,10 @@ describe('uncoolifyService.alphaNumericeName', () => {
     expect(alphaNumericeName('ɥǝʃʃo')[0]).to.equal('hello');
   });
 
+  it('should uncoolify wavy letters', () => {
+    expect(alphaNumericeName('ᖺᗴᒪᒪᗢ')[0]).to.equal('hello');
+  });
+
   it('should uncoolify curr letters', () => {
     expect(alphaNumericeName('ⱧɆⱠⱠØ')[0]).to.equal('hello');
   });
