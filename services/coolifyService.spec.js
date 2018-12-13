@@ -52,4 +52,7 @@ describe('coolifyService.alphaNumericeName', () => {
   it('should replace with Curr letter', () => {
     expect(alphaNumericeName('hello')[10]).to.equal('ⱧɆⱠⱠØ');
   });
+  it('should replace with doublestruck letter', () => {
+    expect(alphaNumericeName('hello')[10]).to.equal('𝕙𝕖𝕝𝕝𝕠');
+  });
 })
