@@ -282,6 +282,35 @@ uncoolifyDicts.fairy = {
   'ፚ': 'z'
 };
 
+uncoolifyDicts.dot = {
+  'å': 'a',
+  'β': 'b',
+  'ç': 'c',
+  'ď': 'd',
+  '£': 'e',
+  'ƒ': 'f',
+  'ğ': 'g',
+  'ȟ': 'h',
+  'ȋ': 'i',
+  'j': 'j',
+  'ķ': 'k',
+  'Ƚ': 'l',
+  'ɱ': 'm',
+  'ñ': 'n',
+  '¤': 'o',
+  'ק': 'p',
+  'ǭ': 'q',
+  'ȑ': 'r',
+  '§': 's',
+  'ț': 't',
+  'ɥ': 'u',
+  '√': 'v',
+  'Ψ': 'w',
+  '×': 'x',
+  'ÿ': 'y',
+  'ž': 'z'
+};
+
 uncoolify.findMatchingTheme = function(name) {
   let maxMatches = 0;
   let themeMatch = null;

@@ -56,4 +56,8 @@ describe('coolifyService.alphaNumericeName', () => {
   it('should replace with fairy letter', () => {
     expect(alphaNumericeName('hello')[11]).to.equal('ᏂᏋᏝᏝᎧ');
   });
+
+  it('should replace with dot letter', () => {
+  expect(alphaNumericeName('hello')[12]).to.equal('ȟ£ȽȽ¤');
+  });
 })
