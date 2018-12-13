@@ -46,7 +46,7 @@ describe('coolifyService.alphaNumericeName', () => {
   });
 
   it('should replace with wavy letter', () => {
-    expect(alphaNumericeName('hello')[9]).to.equal('ᖺᙓᒪᒪᗢ');
+    expect(alphaNumericeName('hello')[9]).to.equal('ᖺᗴᒪᒪᗢ');
   });
 
   it('should replace with Curr letter', () => {
@@ -58,10 +58,11 @@ describe('coolifyService.alphaNumericeName', () => {
   });
 
   it('should replace with dot letter', () => {
-  expect(alphaNumericeName('hello')[12]).to.equal('ȟ£ȽȽ¤');
-    
+    expect(alphaNumericeName('hello')[12]).to.equal('ȟ£ȽȽ¤');
+  });
+
   it('should replace with doublestruck letter', () => {
-  expect(alphaNumericeName('hello')[13]).to.equal('𝕙𝕖𝕝𝕝𝕠');
+    expect(alphaNumericeName('hello')[13]).to.equal('𝕙𝕖𝕝𝕝𝕠');
   });
     
 })

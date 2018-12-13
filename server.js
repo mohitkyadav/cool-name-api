@@ -37,7 +37,7 @@ app.get("/coolify", (request, response) => {
 		cool_name_curr: cool_names[10],
 		cool_name_fairy: cool_names[11],
 		cool_name_dot: cool_names[12],
-    cool_name_doublestruck: cool_names[13],
+   	    cool_name_doublestruck: cool_names[13],
 	})
 })
 

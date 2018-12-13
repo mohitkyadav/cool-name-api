@@ -252,6 +252,7 @@ uncoolifyDicts.curr = {
   'Ɏ': 'y',
   'Ⱬ': 'z'
 };
+
 uncoolifyDicts.doublestruck = {
   '𝕒':'a',
   '𝕓':'b',
