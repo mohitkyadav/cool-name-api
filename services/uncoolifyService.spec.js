@@ -63,7 +63,15 @@ describe('uncoolifyService.alphaNumericeName', () => {
   it('should uncoolify curr letters', () => {
     expect(alphaNumericeName('ⱧɆⱠⱠØ')[0]).to.equal('hello');
   });
-  it('should uncoolify doublestruck letters', () => {
-    expect(alphaNumericeName('𝕙𝕖𝕝𝕝𝕠')[0]).to.equal('hello');
+
+  it('should uncoolify fairy letters', () => {
+    expect(alphaNumericeName('ᏂᏋᏝᏝᎧ')[0]).to.equal('hello');
+  });
+
+  it('should uncoolify dot letters', () => {
+    expect(alphaNumericeName('ȟ£ȽȽ¤')[0]).to.equal('hello');
+    
+ it('should uncoolify doublestruck letters', () => {
+  expect(alphaNumericeName('𝕙𝕖𝕝𝕝𝕠')[0]).to.equal('hello');
   });
 })
