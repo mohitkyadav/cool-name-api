@@ -275,6 +275,35 @@ coolifyDicts.wavy = {
 	'z':'ፚ',
   }
 
+    coolifyDicts.fairy = {
+	'a':'å',
+	'b':'β',
+	'c':'ç',
+	'd':'ď',
+	'e':'£',
+	'f':'ƒ',
+	'g':'ğ',
+	'h':'ȟ',
+	'i':'ȋ',
+	'j':'j',
+	'k':'ķ',
+	'l':'Ƚ',
+	'm':'ɱ',
+	'n':'ñ',
+	'o':'¤',
+	'p':'ק',
+	'q':'ǭ',
+	'r':'ȑ',
+	's':'§',
+	't':'ț',
+	'u':'ɥ',
+	'v':'√',
+	'w':'Ψ',
+	'x':'×',
+	'y':'ÿ',
+	'z':'ž',
+  }
+
 
 String.prototype.allReplace = function(obj) {
 	var retStr = this;
@@ -300,8 +329,9 @@ coolify.alphaNumericName = function(name) {
 		let cool_name_wavy = name.allReplace(coolifyDicts.wavy);
 		let cool_name_curr = name.allReplace(coolifyDicts.curr);
 		let cool_name_fairy = name.allReplace(coolifyDicts.fairy);
+		let cool_name_dot = name.allReplace(coolifyDicts.dot);
 
-		return [cool_name_alphanum, cool_name_rounded, cool_name_square, cool_name_round_alphanum, cool_name_symbolic, cool_name_mirrored, cool_name_emoji, cool_name_xabovebelow, cool_name_upsidedown, cool_name_wavy, cool_name_curr, cool_name_fairy];
+		return [cool_name_alphanum, cool_name_rounded, cool_name_square, cool_name_round_alphanum, cool_name_symbolic, cool_name_mirrored, cool_name_emoji, cool_name_xabovebelow, cool_name_upsidedown, cool_name_wavy, cool_name_curr, cool_name_fairy, cool_name_dot];
 	} else {
 		return false;
 	}

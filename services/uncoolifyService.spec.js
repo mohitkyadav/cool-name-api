@@ -67,4 +67,8 @@ describe('uncoolifyService.alphaNumericeName', () => {
   it('should uncoolify fairy letters', () => {
     expect(alphaNumericeName('ᏂᏋᏝᏝᎧ')[0]).to.equal('hello');
   });
+
+  it('should uncoolify dot letters', () => {
+    expect(alphaNumericeName('ȟ£ȽȽ¤')[0]).to.equal('hello');
+  });
 })
