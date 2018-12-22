@@ -394,10 +394,6 @@ uncoolify.alphaNumericName = function(name) {
   if (typeof(name) != 'string') {
     return false;
   }
-  /* mirrored */
-  if (name == '‮' + name) {
-    return '‮' + name;
-  }
   let theme = uncoolify.findMatchingTheme(name);
   if (theme == null) {
     return ['Are you sure this is a cool name?'];
@@ -405,7 +401,27 @@ uncoolify.alphaNumericName = function(name) {
     theme = symbolicRegex;
   }
   let uncoolName = name.allReplace(theme);
+  // For uncoolify upside down
+  if (theme == uncoolifyDicts.upsidedown){
+	for(let i = 0; i<name.length; i++){
+		let n = name.charCodeAt(i);
+		let m = uncoolName.charCodeAt(i);
+		if (n == m){ 
+			if(name[i] == "q") {
+				uncoolName = uncoolName.replaceAt(i, "b");
+			}
+			else if(name[i] == "u") {
+				uncoolName = uncoolName.replaceAt(i, "n");
+			}
+			else if(name[i] == "p") {
+				uncoolName = uncoolName.replaceAt(i, "d");
+			}
+			}
+ };
+ }
   return [uncoolName];
+
 };
+  
 
 module.exports = uncoolify;

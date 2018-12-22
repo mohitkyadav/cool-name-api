@@ -32,7 +32,7 @@ describe('uncoolifyService.alphaNumericeName', () => {
 
   it('should uncoolify the symbolic equivalent', () => {
     expect(alphaNumericeName('he||o(@!')[0]).to.equal('hellocai');
-  })
+  });
 
   /*
    * TODO: Handle this case
