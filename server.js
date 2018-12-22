@@ -38,7 +38,8 @@ app.get("/coolify", (request, response) => {
 		cool_name_fairy: cool_names[11],
 		cool_name_dot: cool_names[12],
     cool_name_doublestruck: cool_names[13],
-		cool_name_unicodemix: cool_names[14],
+    cool_name_unicodemix: cool_names[14],
+    cool_name_newemoji: cool_names[15],
 	})
 })
 
