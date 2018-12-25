@@ -24,14 +24,14 @@ app.get("/coolify", (request, response) => {
 	let cool_names = coolify.alphaNumericName(request.query.name)
 	response.setHeader('Content-Type', 'application/json')
 	response.json({
-		cool_names_symbolic: cool_names[0],
-		cool_name_alphanum: cool_names[1],
-		cool_name_rounded: cool_names[2],
-		cool_name_square: cool_names[3],
-		cool_name_round_alphanum: cool_names[4],
+		cool_name_alphanum: cool_names[0],
+		cool_name_rounded: cool_names[1],
+		cool_name_square: cool_names[2],
+		cool_name_round_alphanum: cool_names[3],
+		cool_name_symbolic: cool_names[4],
 		cool_name_mirrored: cool_names[5],
-		cool_name_xabovebelow: cool_names[6],
-		cool_name_emoji: cool_names[7],
+		cool_name_emoji: cool_names[6],
+		cool_name_xabovebelow: cool_names[7],
 		cool_name_upsidedown: cool_names[8],
 		cool_name_wavy: cool_names[9],
 		cool_name_curr: cool_names[10],
