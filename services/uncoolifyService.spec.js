@@ -80,4 +80,8 @@ describe('uncoolifyService.alphaNumericeName', () => {
   it('should uncoolify emoji letters', () => {
     expect(alphaNumericeName('🍽📚🛴🛴🌍')[0]).to.equal('hello');
   });
+
+  it('should uncoolify mathematicalfraktur letters', () => {
+    expect(alphaNumericName('ℌ𝔈𝔏𝔏𝔒')[0].to.equal('hello');
+  });
 })
