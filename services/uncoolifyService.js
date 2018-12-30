@@ -373,7 +373,7 @@ uncoolifyDicts.newemoji= {
 	'↪️':'c',
 	'↩️':'d',
 	'📚':'e',
-	'🏳️‍🌈':'f',
+	'🏳️':'f',
 	'📿':'g',
 	'🍽':'h',
 	'🔩':'i',
@@ -486,6 +486,24 @@ uncoolify.alphaNumericName = function(name) {
     theme = symbolicRegex;
   }
   let uncoolName = name.allReplace(theme);
+  // For uncoolify upside down
+   if (theme == uncoolifyDicts.upsidedown){
+ 	for(let i = 0; i<name.length; i++){
+ 		var n = name.charCodeAt(i);
+ 		var m = uncoolName.charCodeAt(i);
+ 		if (n == m){ 
+ 			if(name[i] == "q") {
+ 				uncoolName = uncoolName.replaceAt(i, "b");
+ 			}
+ 			else if(name[i] == "u") {
+ 				uncoolName = uncoolName.replaceAt(i, "n");
+ 			}
+ 			else if(name[i] == "p") {
+ 				uncoolName = uncoolName.replaceAt(i, "d");
+ 			}
+ 		}
+	}
+  }
   return [uncoolName];
 };
 

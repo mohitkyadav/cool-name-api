@@ -70,10 +70,10 @@ describe('coolifyService.alphaNumericeName', () => {
    });
 
   it('should replace with emoji letter', () => {
-    expect(alphaNumericName('hello')[15]).to.equal('🍽📚🛴🛴🌍');
+    expect(alphaNumericeName('hello')[15]).to.equal('🍽📚🛴🛴🌍');
   });
   
   it('should replace with mathematicalfraktur letters', () => {
-    expect(alphaNumericName('hello')[16].to.equal('ℌ𝔈𝔏𝔏𝔒');
+    expect(alphaNumericeName('hello')[16]).to.equal('ℌ𝔈𝔏𝔏𝔒');
   });
 })

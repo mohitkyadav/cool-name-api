@@ -82,6 +82,6 @@ describe('uncoolifyService.alphaNumericeName', () => {
   });
 
   it('should uncoolify mathematicalfraktur letters', () => {
-    expect(alphaNumericName('ℌ𝔈𝔏𝔏𝔒')[0].to.equal('hello');
+    expect(alphaNumericeName('ℌ𝔈𝔏𝔏𝔒')[0]).to.equal('hello');
   });
 })
