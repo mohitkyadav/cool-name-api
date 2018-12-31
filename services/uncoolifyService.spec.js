@@ -11,7 +11,6 @@ describe('uncoolifyService.alphaNumericeName', () => {
 
   it('should return error message if the name is already uncool', () => {
     expect(alphaNumericeName('___')[0]).to.equal('Are you sure this is a cool name?');
-    expect(alphaNumericeName('a_t')[0]).to.equal('Are you sure this is a cool name?');
   });
 
   it('should uncoolify leet', () => {
@@ -34,12 +33,9 @@ describe('uncoolifyService.alphaNumericeName', () => {
     expect(alphaNumericeName('he||o(@!')[0]).to.equal('hellocai');
   });
 
-  /*
-   * TODO: Handle this case
-   * it('should mirror each letter', () => {
-   *  expect(alphaNumericeName('hello')[5]).to.equal('‮hello');
-   * });
-   */
+  it('should mirror each letter', () => {
+    expect(alphaNumericeName('olleh')[0]).to.equal('hello');
+  });
 
   it('should uncoolify emojis', () => {
     expect(alphaNumericeName('♓🎗👢👢⚽')[0]).to.equal('hello');

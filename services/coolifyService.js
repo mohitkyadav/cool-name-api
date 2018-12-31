@@ -442,7 +442,7 @@ coolify.alphaNumericName = function(name) {
 		let cool_name_round_alphanum = cool_name_rounded.slice(0, 1) + cool_name_alphanum.slice(1, name.length - 1)
 			+ cool_name_rounded.slice(name.length - 1, name.length);
 		let cool_name_symbolic = name.allReplace(coolifyDicts.symbolic);
-		let cool_name_mirrored = '‮' + name;
+		let cool_name_mirrored = name.split("").reverse().join("");
 		let cool_name_xabovebelow = name.allReplace(coolifyDicts.xabovebelow);
 		let cool_name_upsidedown = name.allReplace(coolifyDicts.upsidedown);
 		let cool_name_wavy = name.allReplace(coolifyDicts.wavy);

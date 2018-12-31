@@ -425,27 +425,34 @@ uncoolifyDicts.mathematicalfraktur = {
   'ℨ':'z',
 }
 
-uncoolify.findMatchingTheme = function(name) {
-  let maxMatches = 0;
-  let themeMatch = null;
-  for (let [theme, pairs] of Object.entries(uncoolifyDicts)) {
-    let tempMatches = 0;
-    for (let letter in pairs) {
-      if (name.indexOf(letter) > -1) {
-        if (letter != '_') {
-          tempMatches += 1;
-        }
-      }
-    }
-    if (tempMatches > maxMatches) {
-      maxMatches = tempMatches;
-      themeMatch = pairs;
-      if (name.length == tempMatches) {
-        return themeMatch;
-      }
-    }
-  }
-  return themeMatch;
+uncoolifyDicts.mirrored = {
+  'a': 'a',
+  'b': 'b',
+  'c': 'c',
+  'd': 'd',
+  'e': 'e',
+  'f': 'f',
+  'g': 'g',
+  'h': 'h',
+  'i': 'i',
+  'j': 'j',
+  'k': 'k',
+  'l': 'l',
+  'm': 'm',
+  'n': 'n',
+  'o': 'o',
+  'p': 'p',
+  'q': 'q',
+  'r': 'r',
+  's': 's',
+  't': 't',
+  'u': 'u',
+  'v': 'v',
+  'w': 'w',
+  'x': 'x',
+  'y': 'y',
+  'z': 'z',
+  ' ': ' '
 };
 
 uncoolify.findMatchingTheme = function(name) {
@@ -470,6 +477,7 @@ uncoolify.findMatchingTheme = function(name) {
   }
   return themeMatch;
 };
+
 
 uncoolify.alphaNumericName = function(name) {
   if (typeof(name) != 'string') {
@@ -484,6 +492,8 @@ uncoolify.alphaNumericName = function(name) {
     return ['Are you sure this is a cool name?'];
   } else if (theme == uncoolifyDicts.symbolic) {
     theme = symbolicRegex;
+  } else if (theme == uncoolifyDicts.mirrored) {    
+	return [name.split("").reverse().join("")];
   }
   let uncoolName = name.allReplace(theme);
   // For uncoolify upside down

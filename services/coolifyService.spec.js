@@ -30,7 +30,7 @@ describe('coolifyService.alphaNumericeName', () => {
   })
 
   it('should mirror each letter', () => {
-    expect(alphaNumericeName('hello')[5]).to.equal('‮hello');
+    expect(alphaNumericeName('hello')[5]).to.equal('olleh');
   });
 
   it('should replace letters with the emoji equivalent', () => {
