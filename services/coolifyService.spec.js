@@ -30,7 +30,7 @@ describe('coolifyService.alphaNumericeName', () => {
   })
 
   it('should mirror each letter', () => {
-    expect(alphaNumericeName('hello')[5]).to.equal('‮hello');
+    expect(alphaNumericeName('hello')[5]).to.equal('olleh');
   });
 
   it('should replace letters with the emoji equivalent', () => {
@@ -43,5 +43,37 @@ describe('coolifyService.alphaNumericeName', () => {
 
   it('should flip each letter upsidedown', () => {
     expect(alphaNumericeName('hello')[8]).to.equal('ɥǝʃʃo');
+  });
+
+  it('should replace with wavy letter', () => {
+    expect(alphaNumericeName('hello')[9]).to.equal('ᖺᗴᒪᒪᗢ');
+  });
+
+  it('should replace with Curr letter', () => {
+    expect(alphaNumericeName('hello')[10]).to.equal('ⱧɆⱠⱠØ');
+  });
+
+  it('should replace with fairy letter', () => {
+    expect(alphaNumericeName('hello')[11]).to.equal('ᏂᏋᏝᏝᎧ');
+  });
+
+  it('should replace with dot letter', () => {
+    expect(alphaNumericeName('hello')[12]).to.equal('ȟ£ȽȽ¤');
+  });
+
+  it('should replace with doublestruck letter', () => {
+    expect(alphaNumericeName('hello')[13]).to.equal('𝕙𝕖𝕝𝕝𝕠');
+  });
+
+  it('should replace with unicodemix letter', () => {
+    expect(alphaNumericeName('hello')[14]).to.equal('ℌΣ↳↳Φ');
+   });
+
+  it('should replace with emoji letter', () => {
+    expect(alphaNumericeName('hello')[15]).to.equal('🍽📚🛴🛴🌍');
+  });
+  
+  it('should replace with mathematicalfraktur letters', () => {
+    expect(alphaNumericeName('hello')[16]).to.equal('ℌ𝔈𝔏𝔏𝔒');
   });
 })

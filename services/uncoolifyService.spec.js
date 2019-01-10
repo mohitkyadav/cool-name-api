@@ -11,7 +11,6 @@ describe('uncoolifyService.alphaNumericeName', () => {
 
   it('should return error message if the name is already uncool', () => {
     expect(alphaNumericeName('___')[0]).to.equal('Are you sure this is a cool name?');
-    expect(alphaNumericeName('a_t')[0]).to.equal('Are you sure this is a cool name?');
   });
 
   it('should uncoolify leet', () => {
@@ -26,23 +25,17 @@ describe('uncoolifyService.alphaNumericeName', () => {
     expect(alphaNumericeName('🄷🄴🄻🄻🄾')[0]).to.equal('hello');
   });
 
-  /*
-   * TODO: Handle this case
-   * it('should round the first and last and replace all else the specified number eqv.', () => {
-   *  expect(alphaNumericeName('hello')[3]).to.equal('ⓗ311ⓞ');
-   * })
-   */
+  it('should round the first and last and replace all else the specified number eqv.', () => {
+    expect(alphaNumericeName('ⓗ311ⓞ')[0]).to.equal('hello');
+  });
 
   it('should uncoolify the symbolic equivalent', () => {
     expect(alphaNumericeName('he||o(@!')[0]).to.equal('hellocai');
-  })
+  });
 
-  /*
-   * TODO: Handle this case
-   * it('should mirror each letter', () => {
-   *  expect(alphaNumericeName('hello')[5]).to.equal('‮hello');
-   * });
-   */
+  it('should mirror each letter', () => {
+    expect(alphaNumericeName('olleh')[0]).to.equal('hello');
+  });
 
   it('should uncoolify emojis', () => {
     expect(alphaNumericeName('♓🎗👢👢⚽')[0]).to.equal('hello');
@@ -54,5 +47,37 @@ describe('uncoolifyService.alphaNumericeName', () => {
 
   it('should uncoolify flipped letters', () => {
     expect(alphaNumericeName('ɥǝʃʃo')[0]).to.equal('hello');
+  });
+
+  it('should uncoolify wavy letters', () => {
+    expect(alphaNumericeName('ᖺᗴᒪᒪᗢ')[0]).to.equal('hello');
+  });
+
+  it('should uncoolify curr letters', () => {
+    expect(alphaNumericeName('ⱧɆⱠⱠØ')[0]).to.equal('hello');
+  });
+
+  it('should uncoolify fairy letters', () => {
+    expect(alphaNumericeName('ᏂᏋᏝᏝᎧ')[0]).to.equal('hello');
+  });
+
+  it('should uncoolify dot letters', () => {
+    expect(alphaNumericeName('ȟ£ȽȽ¤')[0]).to.equal('hello');
+  });
+
+  it('should uncoolify doublestruck letters', () => {
+    expect(alphaNumericeName('𝕙𝕖𝕝𝕝𝕠')[0]).to.equal('hello');
+  });
+
+  it('should uncoolify unicodemix letters', () => {
+    expect(alphaNumericeName('ℌΣ↳↳Φ')[0]).to.equal('hello');
+  });
+
+  it('should uncoolify emoji letters', () => {
+    expect(alphaNumericeName('🍽📚🛴🛴🌍')[0]).to.equal('hello');
+  });
+
+  it('should uncoolify mathematicalfraktur letters', () => {
+    expect(alphaNumericeName('ℌ𝔈𝔏𝔏𝔒')[0]).to.equal('hello');
   });
 })

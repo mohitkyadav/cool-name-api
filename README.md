@@ -41,11 +41,10 @@ $ curl -X GET 'http://localhost:3000/uncoolify?name=%F0%9F%8C%9B%F0%9F%8C%B1%E2%
 
 ## Build Setup
 
-This is a node.js project. With Node installed you can start the listening webserver with
-
-```
-npm start
-```
+* **Step 1:** Fork the cool-name-api repository and clone it to your machine
+* **Step 2:** Cd into the cloned folder
+* **Step 3:** Install all the dependencies with:```$ npm install```
+* **Step 4:** Run on http://localhost:3000 with:```$ npm start```
 
 ## Contribute
 Found a bug, please [create an issue](https://github.com/mohitkyadav/cool-name-api/issues/new)
