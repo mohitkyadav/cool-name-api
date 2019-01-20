@@ -493,7 +493,7 @@ uncoolify.alphaNumericName = function(name) {
   } else if (theme == uncoolifyDicts.symbolic) {
     theme = symbolicRegex;
   } else if (theme == uncoolifyDicts.mirrored) {    
-	return [name.split("").reverse().join("")];
+	return [name];
   }
   let uncoolName = name.allReplace(theme);
   // For uncoolify upside down
